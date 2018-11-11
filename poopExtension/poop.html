@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <title>Poop Extension</title>
+    <style type="text/css">
+        body {
+            background-color: #714610;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        #container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            min-width: 600px;
+            max-width: 800px;
+        }
+
+        #columnsInput {
+            width: 35%;
+            height: 450px;
+            border: 1px solid #b2b1b4;
+            resize: none;
+            overflow-y: scroll;
+        }
+
+        #output {
+            width: 45%;
+            height: 20px;
+            border: 1px solid #b2b1b4;
+        }
+
+        #buttonsContainer{
+            width: 40px;
+        }
+        .poopButton {
+            width: 42px;
+            height: 24px;
+            border-radius: 4px;
+            display: block;
+            border: 1px solid #b2b1b4;
+            background-size: contain;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            background-color: white;
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        #toCommaConvertButton {
+            background-image: url('/comma.png');
+            padding: 5px;
+        }
+        #toCommaWithQuotesConvertButton {
+            padding: 5px;
+            background-image: url('/qoutes.png');
+        }
+        #toCommaWithSingleQuotesConvertButton{
+            padding: 5px;
+            background-image: url('/singleQoutes.png');
+        }
+
+    </style>
+</head>
+
+<body>
+<h1>Poop converter!</h1>
+<h4>Converts row separated poop To Comma separated poop..</h4>
+<div id="container">
+    <textarea id="columnsInput" placeholder="Place your input here"></textarea>
+    <div id="buttonsContainer">
+        <div class="poopButton" id="toCommaConvertButton"></div>
+        <div class="poopButton" id="toCommaWithQuotesConvertButton"></div>
+        <div class="poopButton" id="toCommaWithSingleQuotesConvertButton"></div>
+    </div>
+    <input id="output">
+</div>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
